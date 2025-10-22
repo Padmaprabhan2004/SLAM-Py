@@ -37,5 +37,5 @@ Data association has issues with min_radius, leading to new landmark formation.
 
 ## Usage
 '''bash
-python main.py
+python main.py \
 python logfile_viewer.py
