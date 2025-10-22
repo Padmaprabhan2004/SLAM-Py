@@ -27,13 +27,16 @@ This project integrates classical SLAM concepts with practical robotics data pip
 
 ---
 
-## 🧠 EKF-SLAM
+## EKF-SLAM
 
 EKF-SLAM fuses robot odometry and sensor observations to couple the robot state and landmark coordinates, to estimate:
 \[
 x = [x_r, y_r, \theta_r, x_1, y_1, x_2, y_2, ...]^T
 \]
-while maintaining the covariance matrix \( P \) to account for uncertainty.  
+while maintaining the extended covariance matrix to account for uncertainty.  
 Prediction and correction steps alternate as the robot moves and observes landmarks.
 
+## Data Association
+Maps the nearest landmarks under a certiain radius and assigns the state vector [x,y] to the newly observed landmarks.
+Data association has issues with min_radius, leading to new landmark formation as observed in the gif.
 
