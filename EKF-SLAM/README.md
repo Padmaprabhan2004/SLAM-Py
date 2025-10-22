@@ -8,15 +8,10 @@ This project integrates classical SLAM concepts with practical robotics data pip
 - **Full EKF-SLAM pipeline**
   - Motion prediction from odometry and control inputs  
   - Landmark-based correction using LiDAR or range-bearing sensors  
-  - Consistent covariance propagation and data association  
-
-- **ROS2 Integration**
-  - Subscribes to `/odom`, `/scan`, and `/tf` topics  
-  - Publishes estimated pose and map for visualization in `rviz2`  
-  - Compatible with **TurtleBot3 (Burger / Waffle Pi)** setups  
+  - Consistent covariance propagation and data association, visualization of error ellipses on exploration.
 
 - **Visualization**
-  - Adapted from *Claus Brenner’s “Learning Mobile Robotics”* MATLAB/Python toolset, and SLAM Lectures 
+  - Adapted from *Claus Brenner’s Lego Robot SLAM using Py2, updated to Py3 for improving functionalities. 
   - Generates diagnostic plots: trajectories, covariance ellipses, and landmark maps.
   - Supports log playback and offline analysis of recorded bag files.
 
