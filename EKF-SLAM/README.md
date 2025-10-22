@@ -1,16 +1,15 @@
 
 # Extended Kalman Filter for Online SLAM (EKF-SLAM)
 
-A complete **Extended Kalman Filter-based SLAM** implementation built for the **ROS2 TurtleBot** platform, featuring robust **sensor fusion**, **map estimation**, and **real-time visualization**.  
-This project integrates classical SLAM concepts with practical robotics data pipelines and has error-ellipse and headine cone visualization for SLAM task.
+A complete **Extended Kalman Filter-based SLAM** implementation built for the **ROS2 TurtleBot** platform, featuring robust **sensor fusion**, **map estimation**, and **real-time visualization**.  This folder integrates classical SLAM concepts with practical robotics data pipelines and has error-ellipse and headine cone visualization for SLAM task.
 ##  Features
 
-- **Full EKF-SLAM pipeline**
+- **Full EKF-SLAM logic at main.py**
   - Motion prediction from odometry and control inputs  
   - Landmark-based correction using LiDAR or range-bearing sensors  
   - Consistent covariance propagation and data association, visualization of error ellipses on exploration.
 
-- **Visualization**
+- **Visualization using logfile_viewer.py**
   - Adapted from *Claus Brenner’s Lego Robot SLAM using Py2, updated to Py3 for improving functionalities. 
   - Generates diagnostic plots: trajectories, covariance ellipses, and landmark maps.
   - Supports log playback and offline analysis of recorded bag files.
@@ -36,3 +35,7 @@ High computational overhead.
 Maps the nearest landmarks under a certiain radius and assigns the state vector [x,y] to the newly observed landmarks.
 Data association has issues with min_radius, leading to new landmark formation.
 
+## Usage
+'''bash
+python main.py
+python logfile_viewer.py
