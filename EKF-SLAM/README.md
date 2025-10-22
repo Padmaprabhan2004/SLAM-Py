@@ -36,6 +36,9 @@ Maps the nearest landmarks under a certiain radius and assigns the state vector 
 Data association has issues with min_radius, leading to new landmark formation.
 
 ## Usage
-'''bash
-python main.py \
+
+Run the main training or visualization scripts directly:
+
+```bash
+python main.py
 python logfile_viewer.py
