@@ -2,6 +2,9 @@
 # Extended Kalman Filter for Online SLAM (EKF-SLAM)
 
 A complete **Extended Kalman Filter-based SLAM** implementation built for the **ROS2 TurtleBot** platform, featuring robust **sensor fusion**, **map estimation**, and **real-time visualization**.  This folder integrates classical SLAM concepts with practical robotics data pipelines and has error-ellipse and headine cone visualization for SLAM task.
+
+ ![Demo](lidar_res.gif)
+
 ##  Features
 
 - **Full EKF-SLAM logic at main.py**
